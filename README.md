@@ -1,5 +1,7 @@
 Diagnostico Catarata
 ====================
+Projeto da disciplina Introdução a Técnicas de Programação 2017.2 da Universidade Federal do Rio Grande do
+Norte (UFRN). 
 
 Etapas:
 -------
@@ -13,7 +15,7 @@ Etapas:
 
 ### Compilando:
 A pasta bin deve ser crianda antes da compilação, pois os arquivos .c compilados serão armazenados nesta
-pasta. Ápos criada:
+pasta. Após criada:
 ```
 make
 ```
@@ -22,7 +24,7 @@ make
 make run
 ```
 ### Teste:
-Para os teste foi utilizado a biblioteca [CUnit](http://cunit.sourceforge.net/). Ápos instalada:
+Para os teste foi utilizado a biblioteca [CUnit](http://cunit.sourceforge.net/). Após instalada:
 ```
 make test
 ```
