@@ -4,10 +4,10 @@ Diagnostico Catarata
 Etapas:
 -------
 
-[] Leitura Imagem
-[] Tranformação em tons de cinza
-[] Segmentação das imagens em tons de cinza
-[] Detecção da catarata
+- [ ] Leitura Imagem
+- [ ] Tranformação em tons de cinza
+- [ ] Segmentação das imagens em tons de cinza
+- [ ] Detecção da catarata
 
 
 
