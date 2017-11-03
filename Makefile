@@ -9,7 +9,7 @@ FLAGS = -O3 -Wall -g
 
 all: lib app
 
-lib: $(LIB)/Matematica.o
+lib: $(LIB)/Imagem.o
 
 app: \
 	$(BIN)/main \

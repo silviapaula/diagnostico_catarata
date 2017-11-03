@@ -1,21 +1,25 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
+#include "Imagem.h"
+#define TAM_STRING 25
 
 
 int main(int argc, char **argv) {
     int opt;
+    char nome[TAM_STRING], formato[TAM_STRING], saida[TAM_STRING];
 
-    while((opt = getopt(argc, argv, "ifoh")) != -1){
+    while((opt = getopt(argc, argv, "i:f:o:h")) != -1){
         switch(opt) {
             case 'i':
-                printf("Input de arquivo %d\n");
+                snprintf(nome, 15, "%s", optarg); 
                 break;
             case 'f':
-                printf("Formato de imagem \n");
+                snprintf(formato, 15, "%s", optarg); 
                 break;
             case 'o':
-                printf("Redirecionamento de saída \n");
+                snprintf(saida, 15, "%s", optarg); 
                 break;
             case 'h':
                 printf("-i   <input-image>\n"
@@ -25,6 +29,10 @@ int main(int argc, char **argv) {
                 break;
                 exit(0);
         }
+    }
+
+    if(strcmp(formato, "ppm") == 0){
+        imagem_ppm(nome);
     }
 
     return 0;
